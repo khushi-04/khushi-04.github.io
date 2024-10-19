@@ -1,6 +1,14 @@
 main {
     padding: 20px;
   }
+
+  body{
+    font-family: 'Roboto', san-serif;
+  }
+
+  h1,h2,h3{
+    font-family: 'Roboto', san-serif;
+  }
   
   .about-me {
     display: flex;
