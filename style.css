@@ -3,11 +3,11 @@ main {
   }
 
   body{
-    font-family: 'Roboto', san-serif;
+    font-family: 'Roboto', sans-serif;
   }
 
   h1,h2,h3{
-    font-family: 'Roboto', san-serif;
+    font-family: 'Roboto', sans-serif;
   }
   
   .about-me {
@@ -25,4 +25,14 @@ main {
   .about-me-text {
     max-width: 600px;
   }
+
+  .side-by-side-container{
+    display: flix;
+    gap: 20px;
+  }
+
+.side-by-side-list{
+    list-style-type: disc;
+    padding-left: 20px;
+}
   
