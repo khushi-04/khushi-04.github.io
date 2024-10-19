@@ -26,8 +26,11 @@ main {
     max-width: 600px;
   }
 
+  ul{
+    padding-left: 20px;
+  }
   .side-by-side-container{
-    display: flix;
+    display: flex;
     gap: 20px;
   }
 
