@@ -1,0 +1,20 @@
+main {
+    padding: 20px;
+  }
+  
+  .about-me {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px; 
+  }
+  
+  .about-me img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; 
+  }
+  
+  .about-me-text {
+    max-width: 600px;
+  }
+  
