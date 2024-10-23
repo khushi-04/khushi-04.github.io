@@ -53,15 +53,32 @@ h3 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 100%;
-  height: 900px;
-  padding:30px;
+  width: 360px;
+  height: 450px;
+  padding-left:30px;
+  padding-right: 30px;
+}
+
+.photo-background-section {
+  position:relative;
+  z-index:1;
+  background-image: url('/images/photo-frame.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 360px;
+  height: 450px;
+  padding-left:30px;
+  padding-right: 30px;
 }
 
 .about-me {
   display: flex;
   align-items: flex-start;
   gap: 20px;
+  color:#4b4b4b;
+  font-family: 'Caveat';
+  font-size:20px;
 }
 
 .about-me img {
