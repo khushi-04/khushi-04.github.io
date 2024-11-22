@@ -1,14 +1,15 @@
 /* General styles */
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: #f4f4f9;
+  background-color: #f9fafb;
   margin: 0;
   padding: 0;
+  color: #333;
 }
 
 h1, h2, h3 {
   font-family: "Montserrat", sans-serif;
-  color: #333;
+  color: #2c3e50;
 }
 
 main {
@@ -18,171 +19,95 @@ main {
 }
 
 /* Navigation Bar */
-.logo{
-  font-family: "Montserrat", sans-serif;
+.logo {
   font-size: 2rem;
-  color: #ffffff; /* White color for the text */
-  font-weight: bold; /* Optional: Makes it stand out more */
-  text-transform: uppercase; /* Optional: Capitalizes the text */
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .topnav-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
-  padding: 15px;
-}
-
-.left-text {
-  font-family: "Montserrat", sans-serif;
-  font-size: 2rem;
-  color: #ffffff;
+  background-color: #34495e;
+  padding: 15px 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .topnav-bar nav ul {
   display: flex;
   gap: 20px;
-  list-style-type: none;
+  list-style: none;
   margin: 0;
   padding: 0;
-}
-
-.topnav-bar nav ul li {
-  margin: 0 10px;
 }
 
 .topnav-bar nav ul li a {
   text-decoration: none;
   color: #ffffff;
-  font-weight: 700;
-  transition: color 0.3s;
+  font-weight: 600;
+  padding: 5px 10px;
+  transition: all 0.3s;
 }
 
 .topnav-bar nav ul li a:hover {
-  color: #f3a683;
+  background-color: #f39c12;
+  border-radius: 5px;
+  color: #ffffff;
 }
 
 /* About Me Section */
 .about-me {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   gap: 40px;
-  color: #333;
-  margin-bottom: 30px;
+  color: #34495e;
 }
 
-.about-me img {
+.photo-section img {
   max-width: 30%;
-  height: auto;
-  border-radius: 6px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.about-me-text {
-  max-width: 400px;
-}
-
-ul {
-  padding-left: 20px;
-  list-style-type: square;
-  margin:0;
+.text-section {
+  max-width: 600px;
+  line-height: 1.6;
 }
 
 .skills-list, .tools-list {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 20px;
-}
-
-.skills-list ul, .tools-list ul {
-  flex: 1;
-  list-style-type: disc;
-  padding-left: 20px;
-  margin: 0;
-}
-
-/* Hobbies List (No Changes Here) */
-.hobbies-list {
-  padding-left: 20px;
-  list-style-type: disc;
-}
-
-.side-by-side-container {
-  display: flex;
-  flex-direction: row;
-  gap: 40px;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-}
-
-.side-by-side-list {
-  flex:1;
-  list-style-type: disc;
-  padding-left: 20px;
-  min-width: 200px;
-}
-
-.photo-background-section {
-  position: relative;
-  z-index: 1;
-  background-image: url('/images/photo-frame.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 500px;
-  height: 600px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.background-section {
-  position: relative;
-  z-index: 1;
-  background-image: url('/images/text_bg_stickynote.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 360px;
-  height: 450px;
-  padding: 30px;
-}
-
-.about-me {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
-  line-height: 1.6;
 }
 
 /* Footer */
 footer {
-  background-color: #333;
-  color: white;
+  background-color: #34495e;
+  color: #ffffff;
   padding: 20px;
   text-align: center;
-}
-
-footer p {
-  margin: 10px 0;
+  margin-top: 30px;
 }
 
 .footer-links {
-  list-style-type: none;
+  list-style: none;
   padding: 0;
 }
 
 .footer-links li {
-  margin: 10px 0;
+  margin: 5px 0;
 }
 
 .footer-links a {
-  color: white;
+  color: #f39c12;
   text-decoration: none;
-  font-weight: 700;
   transition: color 0.3s;
 }
 
 .footer-links a:hover {
-  color: #f3a683;
+  color: #ecf0f1;
 }
 
 /* Responsive Design */
@@ -192,18 +117,7 @@ footer p {
     align-items: center;
   }
 
-  .side-by-side-container {
-    flex-direction: column;
-    gap:20px;
-  }
-
-  .side-by-side-list {
-    flex:none;
-    margin-left: 0;
-    padding-left: 0;
-  }
-
-  .hobbies-list {
-    grid-template-columns: repeat(2, 1fr);
+  .text-section {
+    text-align: center;
   }
 }
