@@ -105,6 +105,37 @@ main {
   gap: 20px;
 }
 
+
+/* Projects */
+
+.featured-projects, .all-projects {
+  margin-bottom: 40px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.project-list .project {
+  margin-bottom: 20px;
+}
+
+.project {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px;
+  background: #f9fafb;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+  margin: 0 0 10px;
+  color: #2c3e50;
+}
+
+
 /* Footer */
 footer {
   background-color: #34495e;
@@ -144,3 +175,4 @@ footer {
     text-align: center;
   }
 }
+
