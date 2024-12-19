@@ -58,6 +58,29 @@ main {
 }
 
 /* About Me Section */
+/* About Me Section */
+.about-me .content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.text-section {
+  flex: 1;
+}
+
+.photo-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.photo-section img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 .about-me {
   display: flex;
   flex-wrap: wrap;
