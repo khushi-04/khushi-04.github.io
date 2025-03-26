@@ -58,7 +58,6 @@ main {
 }
 
 /* About Me Section */
-/* About Me Section */
 .about-me .content {
   display: flex;
   align-items: center;
@@ -104,6 +103,23 @@ main {
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 20px;
 }
+
+/* resume section */
+
+.pdf-wrapper {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.pdf-wrapper iframe {
+  width: 100%;
+  min-width: 900px; /* or whatever the PDF's native width is */
+  height: 600px;
+  border: none;
+  display: block;
+}
+
 
 
 /* Projects */

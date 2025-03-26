@@ -7,12 +7,9 @@ export default function Resume() {
       <main>
         <section className="resume">
           <h2>My Resume</h2>
-          <div className="pdf-container">
+          <div className="pdf-wrapper">
             <iframe
-              src="/documents/resume.pdf"
-              width="100%"
-              height="600px"
-              frameBorder="0"
+              src="/documents/Khushi_Chaudhari_Resume.pdf"
               title="Khushi Chaudhari Resume"
             ></iframe>
           </div>
