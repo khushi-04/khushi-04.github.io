@@ -1,13 +1,14 @@
 import { Link } from 'react-router-dom';
 import '../style.css';
+import Layout from '../components/Layout'
+
 
 export default function About() {
   return (
-    <>
-      <main>
+    <Layout>
       <section className="hero-intro">
             <div className="hero-content">
-              <h1>Hi, I'm Khushi 👋</h1>
+              <h1>Hi, I'm Khushi</h1>
               <p>
                 I'm a fourth-year Data Science student at UC Riverside, passionate about building smart and impactful data-driven solutions. I love blending creativity with code to solve meaningful problems and grow with every project.
               </p>
@@ -82,17 +83,6 @@ export default function About() {
             </ul>
           </div>
         </section>
-      </main>
-
-      <footer>
-        <p>Connect with me:</p>
-        <ul className="footer-links">
-          <li><a href="https://www.linkedin.com/in/khushi-chaudhari33/">LinkedIn: khushi-chaudhari33</a></li>
-          <li><a href="https://github.com/khushi-04">GitHub: khushi-04</a></li>
-          <li><a href="mailto:khushi.chaudhari@gmail.com">Email: khushi.chaudhari@gmail.com</a></li>
-          <li><a href="tel:6195993910">Phone: 619-599-3910</a></li>
-        </ul>
-      </footer>
-    </>
+      </Layout>
   );
 }

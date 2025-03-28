@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom';
 import '../style.css';
+import Layout from '../components/Layout'
 
 export default function Projects() {
   return (
-    <>
-      <main>
+    <Layout>
         <section className="featured-projects">
           <h2>Featured Projects</h2>
           <div className="project-grid">
@@ -102,25 +102,6 @@ export default function Projects() {
             ))}
           </div>
         </section>
-      </main>
-
-      <footer>
-        <p>Connect with me:</p>
-        <div className="footer-links">
-          <a href="https://www.linkedin.com/in/khushi-chaudhari33/" target="_blank" rel="noreferrer">
-            <img src="/images/linkedin_logo.png" alt="LinkedIn" className="footer-icon" />
-          </a>
-          <a href="https://github.com/khushi-04" target="_blank" rel="noreferrer">
-            <img src="/images/github_logo.png" alt="GitHub" className="footer-icon" />
-          </a>
-          <a href="mailto:khushi.chaudhari@gmail.com">
-            <img src="/images/email_logo.png" alt="Email" className="footer-icon" />
-          </a>
-          <a href="tel:6195993910">
-            <img src="/images/phone_logo.png" alt="Phone" className="footer-icon" />
-          </a>
-        </div>
-      </footer>
-    </>
+      </Layout>
   );
 }

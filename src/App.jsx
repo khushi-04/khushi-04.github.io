@@ -4,14 +4,10 @@ import About from './pages/About'
 import Projects from './pages/Projects'
 import Resume from './pages/Resume'
 import './style.css'
-import Header from './components/Header';
-
 
 export default function App() {
   return (
     <div>
-      <Header />
-
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
