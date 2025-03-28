@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import '../style.css';
 import Layout from '../components/Layout'
 
 export default function Home() {
@@ -21,7 +20,7 @@ export default function Home() {
         </section>
 
         <section className="about-website">
-          <h2>About this Website</h2>
+          <h2 className="section-title">About this Website</h2>
           <p>
             The main purpose of this website is to expand my skills in HTML and CSS. It serves as a platform to showcase my portfolio, 
             including my projects and experience. I want to show who I am socially and technically.

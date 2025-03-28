@@ -1,0 +1,22 @@
+/* Theme Variables + Base Typography */
+:root {
+    --bg: #0f0f0f;
+    --text: #f5f5f5;
+    --accent-spotify: #1DB954;
+    --accent-twitch: #9146FF;
+    --card-bg: #1a1a1a;
+    --hover: #2a2a2a;
+    --border: rgba(255, 255, 255, 0.1);
+  }
+  
+  body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  

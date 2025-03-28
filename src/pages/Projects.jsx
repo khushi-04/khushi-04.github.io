@@ -1,12 +1,11 @@
 import { Link } from 'react-router-dom';
-import '../style.css';
 import Layout from '../components/Layout'
 
 export default function Projects() {
   return (
     <Layout>
         <section className="featured-projects">
-          <h2>Featured Projects</h2>
+          <h2 className="section-title">Featured Projects</h2>
           <div className="project-grid">
             <div className="project">
               <h3>Correlation Optimizer</h3>
@@ -26,7 +25,7 @@ export default function Projects() {
         </section>
 
         <section className="all-projects">
-          <h2>All Projects (starting from most recent)</h2>
+          <h2 className="section-title">All Projects (starting from most recent)</h2>
           <div className="project-list">
             {[
               {

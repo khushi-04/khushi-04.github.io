@@ -15,7 +15,7 @@ export default function About() {
             </div>
           </section>
         <section className="about-me-details">
-          <h2>About Me</h2>
+          <h2 className="section-title">About Me</h2>
           <p>
             I am a fourth-year B.S. Data Science major at the University of
             California, Riverside. I have experience in a variety of coding languages and tools, honed through personal projects and coursework.

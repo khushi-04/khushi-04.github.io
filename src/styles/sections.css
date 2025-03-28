@@ -1,0 +1,29 @@
+/* Section-Specific Styling: Hero, About, Resume, Projects */
+
+.hero-intro h1 {
+  font-size: 2.8rem;
+  color: var(--accent-twitch);
+  text-shadow: 0 0 8px rgba(145, 70, 255, 0.4);
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--accent-spotify);
+  border-bottom: 2px solid var(--accent-twitch);
+  display: inline-block;
+  padding-bottom: 0.3rem;
+  letter-spacing: 0.5px;
+}
+
+.about-me,
+.about-me-details,
+.card-section,
+.resume,
+.featured-projects,
+.all-projects {
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
