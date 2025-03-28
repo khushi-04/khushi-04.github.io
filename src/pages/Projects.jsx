@@ -18,17 +18,26 @@ export default function Projects() {
               <a href="https://github.com/khushi-04/movie-recommender" target="_blank" className="project-link">View on GitHub</a>
             </div>
             <div className="project">
-              <h3>Eight Puzzle Search</h3>
-              <p>Implemented UCS and A* algorithms with heuristics to solve the classic 8-puzzle problem in Python, exploring trade-offs in informed vs. uninformed search.</p>
-              <a href="https://github.com/khushi-04/Eight-Puzzle-Search" target="_blank" className="project-link">View on GitHub</a>
+              <h3>Bias-Mitigation in Machine Learning Models</h3>
+              <p>Preprocessed a high-dimensional dataset. Implemented a KNN model and applied massaging bias mitigation to assess model robustness across fairness metrics and standard accuracy evaluation.</p>
+              <a href="https://github.com/khushi-04/bias-mitigation" target="_blank" className="project-link">View on GitHub</a>
             </div>
           </div>
         </section>
 
         <section className="all-projects">
-          <h2>All Projects (starting from most recent, not including featured projects)</h2>
+          <h2>All Projects (starting from most recent)</h2>
           <div className="project-list">
             {[
+              {
+                title: "Correlation Optimizer",
+                desc: "Optimized final exam grading by cleaning student grade data and using correlation analysis to align question weights with actual performance. Ensured fairer assessment through deep EDA and statistical modeling.",
+              },
+              {
+                title: "Bias-Mitigation in Machine Learning Models",
+                desc: "Preprocessed a high-dimensional dataset. Implemented a KNN model and applied massaging bias mitigation to assess model robustness across fairness metrics and standard accuracy evaluation.",
+                link: "https://github.com/khushi-04/bias-mitigation"
+              },
               {
                 title: "K-Nearest-Neighbor Feature Selection",
                 desc: "Built a feature selection pipeline using KNN to improve classification accuracy, balancing dimensionality and performance using NumPy and Pandas.",
@@ -38,6 +47,16 @@ export default function Projects() {
                 title: "Product App",
                 desc: "Developed a dynamic product catalog web app using Angular, showcasing component-based architecture and responsive design with unit testing support.",
                 link: "https://github.com/khushi-04/product-app"
+              },
+              {
+                title: "Eight Puzzle Search",
+                desc: "Implemented UCS and A* algorithms with heuristics to solve the classic 8-puzzle problem in Python, exploring trade-offs in informed vs. uninformed search.",
+                link: "https://github.com/khushi-04/Eight-Puzzle-Search"
+              },
+              {
+                title: "Movie Recommender System",
+                desc: "Created a collaborative filtering system using the MovieLens dataset and KNN to generate personalized movie recommendations based on user similarity.",
+                link: "https://github.com/khushi-04/movie-recommender"
               },
               {
                 title: "Student Dropout Rates",

@@ -1,15 +1,26 @@
 /* General styles */
+:root {
+  --bg: #0f0f0f;
+  --text: #f5f5f5;
+  --accent-spotify: #1DB954;
+  --accent-twitch: #9146FF;
+  --card-bg: #1a1a1a;
+  --hover: #2a2a2a;
+  --border: rgba(255, 255, 255, 0.1);
+}
+
 body {
-  font-family: "Montserrat", sans-serif;
-  background-color: #f9fafb;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
-  color: #333;
 }
+
 
 h1, h2, h3 {
   font-family: "Montserrat", sans-serif;
-  color: #2c3e50;
+  color: var(--text);
 }
 
 main {
@@ -30,7 +41,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #34495e;
+  background-color: var(--card-bg);
   padding: 15px 30px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -52,7 +63,7 @@ main {
 }
 
 .topnav-bar nav ul li a:hover {
-  background-color: #f39c12;
+  background-color: var(--accent-spotify);
   border-radius: 5px;
   color: #ffffff;
 }
@@ -74,17 +85,13 @@ main {
   justify-content: center;
 }
 
-.photo-section img {
-  max-width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+
 
 .about-me {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
-  color: #34495e;
+  color: var(--text);
 }
 
 .photo-section img {
@@ -98,11 +105,43 @@ main {
   line-height: 1.6;
 }
 
-.skills-list, .tools-list {
+
+.card-section {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
 }
+
+.card {
+  background-color: var(--card-bg);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: var(--text);
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card ul li {
+  margin-bottom: 6px;
+  color: var(--text);
+}
+
+
 
 /* resume section */
 
@@ -120,10 +159,7 @@ main {
   display: block;
 }
 
-
-
 /* Projects */
-
 .featured-projects, .all-projects {
   margin-bottom: 40px;
 }
@@ -139,23 +175,23 @@ main {
 }
 
 .project {
-  border: 1px solid #ccc;
+  border: 1px solid var(--border);
   padding: 15px;
   border-radius: 8px;
-  background: #f9fafb;
+  background: var(--card-bg);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .project h3 {
   margin: 0 0 10px;
-  color: #2c3e50;
+  color: var(--text);
 }
 
 
 /* Footer */
 footer {
-  background-color: #34495e;
-  color: #ffffff;
+  background-color: var(--card-bg);
+  color: var(--text);
   padding: 20px;
   text-align: center;
   margin-top: 30px;
@@ -171,13 +207,13 @@ footer {
 }
 
 .footer-links a {
-  color: #f39c12;
+  color: var(--accent-twitch);
   text-decoration: none;
   transition: color 0.3s;
 }
 
 .footer-links a:hover {
-  color: #ecf0f1;
+  color: var(--accent-spotify);
 }
 
 /* Responsive Design */
@@ -192,3 +228,11 @@ footer {
   }
 }
 
+a {
+  transition: color 0.2s ease;
+}
+.card:hover,
+.project:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(145, 70, 255, 0.2); /* twitch glow */
+}
