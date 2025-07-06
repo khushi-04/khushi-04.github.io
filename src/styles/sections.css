@@ -19,14 +19,21 @@
 .about-me,
 .about-me-details,
 .card-section,
-.resume,
 .featured-projects,
 .all-projects {
   background-color: var(--card-bg);
   border-radius: 12px;
   padding: 40px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  width: 100vw;
+  padding: 40px;
+  box-sizing: border-box;
 }
+
 
 .resume-button {
   display: inline-block;
@@ -43,3 +50,18 @@
 .resume-button:hover {
   background-color: var(--accent-spotify);
 }
+
+
+.resume-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.resume-content {
+  width: 100%;
+  text-align: center;
+}
+
+
+
