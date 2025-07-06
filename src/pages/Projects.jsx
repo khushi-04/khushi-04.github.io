@@ -8,13 +8,14 @@ export default function Projects() {
           <h2 className="section-title">Featured Projects</h2>
           <div className="project-grid">
             <div className="project">
-              <h3>Correlation Optimizer</h3>
-              <p>Optimized final exam grading by cleaning student grade data and using correlation analysis to align question weights with actual performance. Ensured fairer assessment through deep EDA and statistical modeling.</p>
+              <h3>Anime Recommender System</h3>
+              <p>Built a Spark MLlib ALS recommender with PySpark pipelines to generate top-10 recommendations stored in SQLite. Added user segmentation via k-means and enabled real-time front-end filtering with dynamic dropdowns.</p>
+              <a href="https://github.com/khushi-04/anime-recommender" target="_blank" className="project-link">View on GitHub</a>
             </div>
             <div className="project">
-              <h3>Movie Recommender System</h3>
-              <p>Created a collaborative filtering system using the MovieLens dataset and KNN to generate personalized movie recommendations based on user similarity.</p>
-              <a href="https://github.com/khushi-04/movie-recommender" target="_blank" className="project-link">View on GitHub</a>
+              <h3>AI Automation With Othello</h3>
+              <p>Engineered an AI automation pipeline to train 9 neural network agents on 25k+ self-play moves, evaluated via round-robin tournaments using Elo ratings. Ran architecture sweeps to compare depth-vs-width tradeoffs, identifying 3 to 5 layer models as most effective.</p>
+              <a href="https://github.com/khushi-04/AI-Automation" target="_blank" className="project-link">View on GitHub</a>
             </div>
             <div className="project">
               <h3>Bias-Mitigation in Machine Learning Models</h3>
@@ -28,6 +29,16 @@ export default function Projects() {
           <h2 className="section-title">All Projects (starting from most recent)</h2>
           <div className="project-list">
             {[
+              {
+                title: "AI Automation With Othello",
+                desc: "Engineered an AI automation pipeline to train 9 neural network agents on 25k+ self-play moves, evaluated via round-robin tournaments using Elo ratings. Ran architecture sweeps to compare depth-vs-width tradeoffs, identifying 3 to 5 layer models as most effective.",
+                link: "https://github.com/khushi-04/AI-Automation"
+              },
+              {
+                title: "Anime Recommender System",
+                desc: "Built a Spark MLlib ALS recommender with PySpark pipelines to generate top-10 recommendations stored in SQLite. Added user segmentation via k-means and enabled real-time front-end filtering with dynamic dropdowns.",
+                link: "https://github.com/khushi-04/anime-recommender"
+              },
               {
                 title: "Correlation Optimizer",
                 desc: "Optimized final exam grading by cleaning student grade data and using correlation analysis to align question weights with actual performance. Ensured fairer assessment through deep EDA and statistical modeling.",
