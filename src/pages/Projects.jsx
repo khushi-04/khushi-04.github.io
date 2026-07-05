@@ -30,6 +30,11 @@ export default function Projects() {
           <div className="project-list">
             {[
               {
+                title: "Connected Duo",
+                desc: "A real-time couple's companion app built with React and Firebase. Built a private full-stack web application designed for two users to stay connected through shared notes, interactive counters, and personalized activities. Implemented real-time synchronization with Firebase Firestore so updates appear instantly across devices, deployed with Vercel, and designed a responsive mobile-first interface that can be installed as a home screen web app on iPhone. ",
+                link: "https://github.com/khushi-04/connected-mobile"
+              },
+              {
                 title: "AI Automation With Othello",
                 desc: "Engineered an AI automation pipeline to train 9 neural network agents on 25k+ self-play moves, evaluated via round-robin tournaments using Elo ratings. Ran architecture sweeps to compare depth-vs-width tradeoffs, identifying 3 to 5 layer models as most effective.",
                 link: "https://github.com/khushi-04/AI-Automation"
@@ -107,7 +112,7 @@ export default function Projects() {
               <div className="project" key={i}>
                 <h3>{proj.title}</h3>
                 <p>{proj.desc}</p>
-                <a href={proj.link} target="_blank" className="project-link" rel="noreferrer">View on GitHub</a>
+                <a href={proj.link} target="_blank" className="project-link" rel="noreferrer">View on Github</a>
               </div>
             ))}
           </div>
